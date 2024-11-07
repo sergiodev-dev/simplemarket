@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    background-image: url(img/FreshFruitBasket_Gold.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.square {
+    font-size: 3rem;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 99px purple;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.square:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 99px white;
+}
+
+.display {
+    border: 2px solid white;
+    height: 10rem;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.talk {
+    font-size: 3rem;
+    margin: 20px;
+    display: inline-block;
+}
+
+.cart {
+    font-size: 6rem;
+    margin: 20px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 99px purple;
+    transition: transform 0.2s;
+}
+
+.cart:hover {
+    transform: scale(1.2);
+}
+
+p {
+    color: white;
+}
+
+.bought {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for individual cart items */
+.cart-item {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+/* Tablet view */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .square {
+        font-size: 2.5rem;
+        margin: 8px;
+    }
+
+    .cart {
+        font-size: 5rem;
+    }
+
+    .display {
+        font-size: 1.2rem;
+    }
+
+    .talk {
+        font-size: 2.5rem;
+    }
+
+    .cart-item {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .square {
+        font-size: 2rem;
+        margin: 6px;
+    }
+
+    .cart {
+        font-size: 4rem;
+    }
+
+    .display {
+        font-size: 1rem;
+    }
+
+    .talk {
+        font-size: 2rem;
+    }
+
+    .bought {
+        gap: 5px;
+    }
+
+    .cart-item {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
